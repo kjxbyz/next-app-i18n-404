@@ -15,8 +15,8 @@ export const config = {
 };
 
 const cookieName: string = cacheLngKey;
-const basePath: string = "test";
-const getPath = (lng: string) => `/${basePath}/${lng}`;
+const basePath: string = "/test";
+const getPath = (lng: string) => `${basePath}/${lng}`;
 
 export function middleware(req: NextRequest) {
   let lng;
